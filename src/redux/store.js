@@ -7,6 +7,7 @@ const todosSlice = createSlice({
     addToDo: (state, action) => {
       state.push(action.payload);
     },
+    deletetodo:(state,action)=>state.filter(todo=>todo.title!==action.payload.title)
   },
 });
 

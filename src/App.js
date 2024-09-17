@@ -23,7 +23,7 @@ function App() {
       <div>
         {todos.map((todo, i) => (
           <div key={i}>
-            <h1>{todo.title}</h1> <button>delete</button>
+            <h1>{todo.title}</h1> <button onClick={()=>dispatch(todosActions.deletetodo(todo))}>delete</button>
           </div>
         ))}
       </div>
